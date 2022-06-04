@@ -39,7 +39,8 @@ impl<'a> Commander<'a>
             self.config.project_name(),
             self.config.data_path(),
         );
-        //println!("{}", make_dir_command); // DEBUG
+
+        println!("{}", make_dir_command); // DEBUG
         Commander::do_powershell_command(&make_dir_command).unwrap();
     }
 
